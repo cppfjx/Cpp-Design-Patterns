@@ -55,7 +55,7 @@ public:
 //扩展操作
 
 // 由于两个子类有相同的成员Stream*，所以这个成员要往上提
-DecoratorStream: public Stream{
+DecoratorStream: public Stream{//继承stream是为了接口规范  只有这样119行才可以用
 protected:
     Stream* stream;//...
     
